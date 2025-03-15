@@ -3,52 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portland Digital Corps | Volunteer Civic Tech Sprint</title>
-  <meta name="description" content="Portland Digital Corps is a volunteer civic tech sprint helping local nonprofits and public interest orgs tackle digital problems—one short-term project at a time." />
+  <title>Portland Digital Corps</title>
+  <meta name="description" content="An civic tech sprint connecting tech volunteers with Portland nonprofits to solve real digital problems." />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-gray-900">
+  <!-- Navigation -->
   <nav class="bg-white shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
         <a href="/" class="text-xl font-bold text-gray-900">Portland Digital Corps</a>
         <div class="flex space-x-4">
-          <a href="/about.html" class="text-gray-700 hover:text-blue-500 font-medium">About</a>
-          <a href="/projects.html" class="text-gray-700 hover:text-blue-500 font-medium">Projects</a>
-          <a href="/volunteer.html" class="text-gray-700 hover:text-blue-500 font-medium">Volunteer</a>
-          <a href="/orgs.html" class="text-gray-700 hover:text-blue-500 font-medium">For Orgs</a>
+          <a href="#volunteer" class="text-gray-700 hover:text-blue-500">Volunteer</a>
+          <a href="#orgs" class="text-gray-700 hover:text-blue-500">For Nonprofits</a>
+          <a href="#faq" class="text-gray-700 hover:text-blue-500">FAQ</a>
         </div>
       </div>
     </div>
   </nav>
-
-  <main class="py-16">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <header class="mb-12">
-        <h1 class="text-5xl font-bold mb-6 leading-tight">
-          Short-term civic tech for Portland’s public interest.
-        </h1>
-        <p class="text-xl text-gray-700 leading-relaxed">
-          Portland Digital Corps is a volunteer-powered initiative matching local designers, developers, and digital professionals with nonprofits and public-serving orgs to fix small but meaningful digital challenges—quickly.
-        </p>
-      </header>
-
-      <section class="prose prose-lg text-gray-700">
-        <p>
-          Whether it’s fixing an outdated website, improving a form, or making your tools more usable, our goal is to scope, build, and deliver something valuable in a short amount of time. We focus on work that’s impactful, clearly scoped, and actually doable—no open-ended wishlists, no tech hand-waving.
-        </p>
-        <p>
-          This is not an ongoing agency or a new startup. It’s a focused volunteer sprint happening in Spring 2025, inspired by the way civic teams like 18F helped governments ship fast, helpful solutions—and designed for Portland’s nonprofits, mutual aid groups, and public interest orgs.
-        </p>
-        <p>
-          For volunteers, it’s a chance to apply your skills on real teams solving real problems. For orgs, it’s a structured way to get help—from scoping a project to shipping something your community will actually use.
-        </p>
-        <p>
-          Portland-area org? Need digital help? <a href="/orgs.html">Let us know.</a><br />
-          Technologist looking for something meaningful to work on? <a href="/volunteer.html">Join a team.</a>
-        </p>
-      </section>
+  <!-- Hero -->
+  <header class="bg-gray-50 py-20">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h1 class="text-5xl font-bold mb-4">Tech talent. Local impact. Done in 8 weeks.</h1>
+      <p class="text-xl text-gray-700 mb-6">
+        Portland Digital Corps connects volunteer tech pros with nonprofits to fix broken websites, clunky forms, and digital tools—fast.
+      </p>
+      <a href="#volunteer" class="px-6 py-3 bg-blue-600 text-white font-medium rounded hover:bg-blue-700">Join the Corps</a>
     </div>
-  </main>
+  </header>
+  <!-- How it Works -->
+  <section class="py-16 bg-white" id="how">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold mb-8 text-center">How It Works</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold">1. Identify the need</h3>
+          <p class="text-gray-600">We scope bite-sized projects with clear deliverables that can actually ship in 8 weeks.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">2. Build expert teams</h3>
+          <p class="text-gray-600">Designers, developers, and PMs form cross-functional teams matched to project needs.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">3. Ship real solutions</h3>
+          <p class="text-gray-600">No endless meetings. No vague promises. Just focused work that delivers results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Call to Action -->
+  <section class="py-16 bg-blue-50 text-center" id="volunteer">
+    <h2 class="text-3xl font-bold mb-4">Ready to make an impact?</h2>
+    <p class="text-lg text-gray-700 mb-6">Join tech pros building digital tools that matter for Portland's community organizations.</p>
+    <a href="https://forms.gle/YOUR_FORM_HERE" class="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Apply to Volunteer</a>
+  </section>
+  <!-- Footer -->
+  <footer class="py-8 text-center text-sm text-gray-500 bg-white border-t">
+    Portland Digital Corps · 2025 · Volunteer-powered
+  </footer>
 </body>
 </html>
