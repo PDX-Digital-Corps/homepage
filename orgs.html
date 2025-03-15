@@ -5,18 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>For Organizations | Portland Digital Corps</title>
   <meta name="description" content="Portland-area nonprofits, government entities, and community organizations: Get help with your digital challenges through our focused volunteer tech teams." />
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
+        fontFamily: {
+          'sans': ['"Public Sans"', 'sans-serif'],
+          'serif': ['"Public Sans"', 'serif'],
+          'mono': ['monospace'],
+        },
         extend: {
           colors: {
             pdx: {
-              blue: '#0A4DA6',
-              gold: '#B38600',
-              green: '#005C45',
-              light: '#F0F7FF',
-              dark: '#0A2A4A'
+              gold: '#B38600',     // Primary color - accessible gold
+              green: '#005C45',    // Secondary color - Portland green
+              light: '#FFF8E1',    // Light gold background
+              dark: '#221C00'      // Dark text color
             }
           }
         }
