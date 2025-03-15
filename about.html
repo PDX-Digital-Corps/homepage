@@ -6,16 +6,34 @@
   <title>About | Portland Digital Corps</title>
   <meta name="description" content="Learn more about the motivations and values behind Portland Digital Corps, a volunteer civic tech initiative led by Ron Bronson." />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Portland flag-inspired colors (WCAG AA compliant)
+            pdx: {
+              blue: '#0A4DA6',     // Darkened Portland flag blue for accessibility
+              gold: '#B38600',     // Accessible gold
+              green: '#005C45',    // Portland green (forest)
+              light: '#F0F7FF',    // Light blue background
+              dark: '#0A2A4A'      // Dark blue text
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body class="bg-white text-gray-900">
   <nav class="bg-white shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
-        <a href="/" class="text-xl font-bold text-gray-900">Portland Digital Corps</a>
+        <a href="/" class="text-xl font-bold text-pdx-dark">Portland Digital Corps</a>
         <div class="flex space-x-4">
-          <a href="/about.html" class="text-gray-700 hover:text-blue-500 font-medium">About</a>
-          <a href="https://forms.gle/YOUR_ORG_FORM" class="text-gray-700 hover:text-blue-500 font-medium">Request Help</a>
-          <a href="https://forms.gle/YOUR_VOLUNTEER_FORM" class="text-gray-700 hover:text-blue-500 font-medium">Volunteer</a>
+          <a href="/about.html" class="text-gray-700 hover:text-pdx-blue font-medium">About</a>
+          <a href="/orgs.html" class="text-gray-700 hover:text-pdx-blue font-medium">For Organizations</a>
+          <a href="/volunteer.html" class="text-gray-700 hover:text-pdx-blue font-medium">Volunteer</a>
         </div>
       </div>
     </div>
@@ -23,51 +41,60 @@
 
   <main class="py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl font-bold mb-6 leading-tight">About Portland Digital Corps</h1>
+      <h1 class="text-4xl font-bold mb-6 leading-tight text-pdx-dark">About Portland Digital Corps</h1>
       <p class="text-lg text-gray-700 mb-6">
         Portland Digital Corps is a short-term, volunteer-powered civic tech initiative created in 2025 to help nonprofits and mission-driven organizations in the Portland metro area solve real digital problems—quickly, collaboratively, and effectively.
       </p>
 
-      <h2 class="text-2xl font-semibold mt-10 mb-4">Why this, why now?</h2>
+      <h2 class="text-2xl font-semibold mt-10 mb-4 text-pdx-dark">Why this, why now?</h2>
       <p class="text-gray-700 mb-4">
-        This project is a direct response to a moment of transition—not just for me personally, but for our broader digital public service community. After the sunset of <a class="text-blue-600 hover:text-blue-800" href="https://18f.org" target="_blank" rel="noopener">18F</a>, where I served as Head of Design, I found myself thinking less about retrospectives and more about action. What can we fix right now, with the time and skills we already have?
+        This project is a direct response to a moment of transition—not just for me personally, but for our broader digital public service community. After the sunset of <a class="text-pdx-blue hover:text-pdx-dark" href="https://18f.org" target="_blank" rel="noopener">18F</a>, where I served as Head of Design, I found myself thinking less about retrospectives and more about action. What can we fix right now, with the time and skills we already have?
       </p>
 
       <p class="text-gray-700 mb-4">
         Portland Digital Corps is my answer to that question: a local, fast-moving, highly-focused space where skilled technologists can work on small, solvable problems that matter. Whether you're between roles, looking to give back, or just want to use your skills for good, this is a space to roll up your sleeves and get involved.
       </p>
 
-      <h2 class="text-2xl font-semibold mt-10 mb-4">A community-first approach</h2>
+      <h2 class="text-2xl font-semibold mt-10 mb-4 text-pdx-dark">A community-first approach</h2>
       <p class="text-gray-700 mb-4">
         Volunteering doesn't just mean picking up trash or reading books at the library. Designers, engineers, and technologists have skills that are often in short supply at the very organizations doing the most meaningful community work. This is our way to plug in—without waiting for permission, funding, or perfection.
       </p>
 
       <p class="text-gray-700 mb-4">
-        For local organizations, this is a chance to get scoped, hands-on help: maybe your site hasn’t been updated in years, your donation form is broken, or you need help understanding whether a tool is worth adopting. We’ll work with you to clarify the challenge, develop a short-term plan, and deliver what we can.
+        For local organizations, this is a chance to get scoped, hands-on help: maybe your site hasn't been updated in years, your donation form is broken, or you need help understanding whether a tool is worth adopting. We'll work with you to clarify the challenge, develop a short-term plan, and deliver what we can.
       </p>
 
       <p class="text-gray-700 mb-4">
-        While we don't offer ongoing support, marketing, or fundraising help, we can often suggest improvements, create prototypes, or help you get unstuck. We’ll consider limited coaching and AI-related support on a case-by-case basis—but our focus remains squarely on digital infrastructure and practical improvements.
+        While we don't offer ongoing support, marketing, or fundraising help, we can often suggest improvements, create prototypes, or help you get unstuck. We'll consider limited coaching and AI-related support on a case-by-case basis—but our focus remains squarely on digital infrastructure and practical improvements.
       </p>
 
-      <h2 class="text-2xl font-semibold mt-10 mb-4">Our Influences</h2>
+      <h2 class="text-2xl font-semibold mt-10 mb-4 text-pdx-dark">Our Influences</h2>
       <ul class="list-disc pl-6 text-gray-700 mb-6">
-        <li>Delivery best practices and agile methods from <a class="text-blue-600 hover:text-blue-800" href="https://18f.org" target="_blank" rel="noopener">18F</a></li>
-        <li>Service design mindset from the <a class="text-blue-600 hover:text-blue-800" href="https://en.wikipedia.org/wiki/United_States_Digital_Service" target="_blank" rel="noopener">U.S. Digital Service</a></li>
+        <li>Delivery best practices and agile methods from <a class="text-pdx-blue hover:text-pdx-dark" href="https://18f.org" target="_blank" rel="noopener">18F</a></li>
+        <li>Service design mindset from the <a class="text-pdx-blue hover:text-pdx-dark" href="https://en.wikipedia.org/wiki/United_States_Digital_Service" target="_blank" rel="noopener">U.S. Digital Service</a></li>
         <li>Community ethos from civic hacking and mutual aid networks</li>
       </ul>
 
-      <h2 class="text-2xl font-semibold mt-10 mb-4">Supporting Partners</h2>
+      <h2 class="text-2xl font-semibold mt-10 mb-4 text-pdx-dark">Supporting Partners</h2>
       <ul class="list-disc pl-6 text-gray-700 mb-6">
-        <li><a href="https://designforthepublic.org" class="text-blue-600 hover:text-blue-800" target="_blank">Design for the Public</a></li>
-        <li><a href="https://portland.aiga.org" class="text-blue-600 hover:text-blue-800" target="_blank">AIGA Portland</a></li>
-        <li><a href="https://www.meetup.com/pdx-ux-design-hub/" class="text-blue-600 hover:text-blue-800" target="_blank">PDX UX Design Hub</a></li>
+        <li><a href="https://designforthepublic.org" class="text-pdx-blue hover:text-pdx-dark" target="_blank">Design for the Public</a></li>
+        <li><a href="https://portland.aiga.org" class="text-pdx-blue hover:text-pdx-dark" target="_blank">AIGA Portland</a></li>
+        <li><a href="https://www.meetup.com/pdx-ux-design-hub/" class="text-pdx-blue hover:text-pdx-dark" target="_blank">PDX UX Design Hub</a></li>
       </ul>
 
       <p class="text-sm text-gray-500 mt-8">
-        Want to partner with us, amplify this work, or help fund a future iteration? Contact <a href="mailto:contact@ronbronson.com" class="text-blue-600 hover:text-blue-800">Ron Bronson</a>.
+        Want to partner with us, amplify this work, or help fund a future iteration? Contact <a href="mailto:contact@ronbronson.com" class="text-pdx-blue hover:text-pdx-dark">Ron Bronson</a>.
       </p>
     </div>
   </main>
+  
+  <!-- Footer -->
+  <footer class="py-8 text-center text-sm text-gray-500 bg-white border-t">
+    <p>Portland Digital Corps · 2025 · Volunteer-powered</p>
+    <p class="mt-2">
+      <a href="/about.html" class="text-pdx-blue hover:underline">About</a> · 
+      <a href="mailto:contact@portlanddigitalcorps.org" class="text-pdx-blue hover:underline">Contact</a>
+    </p>
+  </footer>
 </body>
 </html>
