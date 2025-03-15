@@ -5,18 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Volunteer | Portland Digital Corps</title>
   <meta name="description" content="Join Portland Digital Corps to build your portfolio, make local impact, and connect with Portland's tech community through focused, short-term civic projects." />
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
+        fontFamily: {
+          'sans': ['"Public Sans"', 'sans-serif'],
+          'serif': ['"Public Sans"', 'serif'],
+          'mono': ['monospace'],
+        },
         extend: {
           colors: {
             pdx: {
-              blue: '#0A4DA6',
-              gold: '#B38600',
-              green: '#005C45',
-              light: '#F0F7FF',
-              dark: '#0A2A4A'
+              gold: '#B38600',     // Primary color - accessible gold
+              green: '#005C45',    // Secondary color - Portland green
+              light: '#FFF8E1',    // Light gold background
+              dark: '#221C00'      // Dark text color
             }
           }
         }
