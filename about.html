@@ -5,19 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Portland Digital Corps</title>
   <meta name="description" content="Learn more about the motivations and values behind Portland Digital Corps, a volunteer civic tech initiative led by Ron Bronson." />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
+        fontFamily: {
+          'sans': ['"Public Sans"', 'sans-serif'],
+          'serif': ['"Public Sans"', 'serif'],
+          'mono': ['monospace'],
+        },
         extend: {
           colors: {
-            // Portland flag-inspired colors (WCAG AA compliant)
             pdx: {
-              blue: '#0A4DA6',     // Darkened Portland flag blue for accessibility
-              gold: '#B38600',     // Accessible gold
-              green: '#005C45',    // Portland green (forest)
-              light: '#F0F7FF',    // Light blue background
-              dark: '#0A2A4A'      // Dark blue text
+              gold: '#B38600',     // Primary color - accessible gold
+              green: '#005C45',    // Secondary color - Portland green
+              light: '#FFF8E1',    // Light gold background
+              dark: '#221C00'      // Dark text color
             }
           }
         }
