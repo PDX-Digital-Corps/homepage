@@ -6,13 +6,70 @@
   <title>For Organizations | Portland Digital Corps</title>
   <meta name="description" content="Portland-area nonprofits, government entities, and community organizations: Get help with your digital challenges through our focused volunteer tech teams." />
  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap">
-  <script src="https://cdn.tailwindcss.com"></script>
+ <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @font-face {
+      font-family: 'Embro';
+      src: url('/fonts/embro-regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Embro';
+      src: url('/fonts/embro-regular-italic.woff') format('woff');
+      font-weight: normal;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Embro';
+      src: url('/fonts/embro-medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Embro';
+      src: url('/fonts/embro-medium-italic.woff') format('woff');
+      font-weight: 500;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Embro';
+      src: url('/fonts/embro-semibold.woff') format('woff');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Embro';
+      src: url('/fonts/embro-semibold-italic.woff') format('woff');
+      font-weight: 600;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Embro';
+      src: url('/fonts/embro-bold.woff') format('woff');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
   <script>
     tailwind.config = {
       theme: {
         fontFamily: {
-          'sans': ['"Public Sans"', 'sans-serif'],
-          'serif': ['"Public Sans"', 'serif'],
+          'sans': ['Embro', 'sans-serif'],
+          'serif': ['Embro', 'serif'],
           'mono': ['monospace'],
         },
         extend: {
@@ -28,7 +85,6 @@
       }
     }
   </script>
-</head>
 <body class="bg-white text-gray-900">
   <nav class="bg-white shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
