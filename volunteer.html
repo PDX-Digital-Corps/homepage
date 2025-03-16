@@ -3,16 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Volunteer | Portland Digital Corps</title>
+  <title>Volunteer | PDX Digital Corps</title>
   <meta name="description" content="Join Portland Digital Corps to build your portfolio, make local impact, and connect with Portland's tech community through focused, short-term civic projects." />
- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap">
-  <script src="https://cdn.tailwindcss.com"></script>
+ <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @font-face {
+      font-family: 'Embro';
+      src: url('/fonts/embro-regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Embro';
+      src: url('/fonts/embro-regular-italic.woff') format('woff');
+      font-weight: normal;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Embro';
+      src: url('/fonts/embro-medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Embro';
+      src: url('/fonts/embro-medium-italic.woff') format('woff');
+      font-weight: 500;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Embro';
+      src: url('/fonts/embro-semibold.woff') format('woff');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Embro';
+      src: url('/fonts/embro-semibold-italic.woff') format('woff');
+      font-weight: 600;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Embro';
+      src: url('/fonts/embro-bold.woff') format('woff');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
   <script>
     tailwind.config = {
       theme: {
         fontFamily: {
-          'sans': ['"Public Sans"', 'sans-serif'],
-          'serif': ['"Public Sans"', 'serif'],
+          'sans': ['Embro', 'sans-serif'],
+          'serif': ['Embro', 'serif'],
           'mono': ['monospace'],
         },
         extend: {
@@ -28,7 +84,6 @@
       }
     }
   </script>
-</head>
 <body class="bg-white text-gray-900">
   <!-- Navigation -->
   <nav class="bg-white shadow-sm">
