@@ -410,6 +410,39 @@
       </div>
     </div>
   </section>
+
+<!-- Email Signup in Footer -->
+<section class="bg-white border-t py-8 text-center">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-xl font-semibold text-pdx-dark mb-2">Stay in the loop</h2>
+    <p class="text-gray-700 text-sm mb-4">
+      Want updates about upcoming sessions and ways to get involved? Subscribe to our email list.
+    </p>
+    <form
+      action="https://buttondown.email/api/emails/embed-subscribe/pdxdigitalcorps"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://buttondown.email/pdxdigitalcorps', 'popupwindow')"
+      class="flex flex-col sm:flex-row items-center justify-center gap-2"
+    >
+      <input
+        type="email"
+        name="email"
+        id="bd-email"
+        placeholder="you@email.com"
+        required
+        class="px-4 py-2 rounded text-pdx-dark placeholder-gray-500 border border-pdx-dark focus:outline-none focus:ring-2 focus:ring-pdx-gold w-full sm:w-64"
+      />
+      <input
+        type="submit"
+        value="Sign Up"
+        class="bg-pdx-gold text-white font-semibold px-4 py-2 rounded hover:bg-pdx-dark transition-colors cursor-pointer"
+      />
+    </form>
+    <p class="text-xs text-gray-500 mt-2">We’ll only email when we’ve got something useful to share.</p>
+  </div>
+</section>
+
   
  <!-- Footer -->
   <footer class="py-8 text-center text-sm text-gray-500 bg-white border-t">
