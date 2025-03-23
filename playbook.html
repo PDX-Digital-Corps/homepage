@@ -25,43 +25,65 @@
       font-family: 'Embro', sans-serif;
     }
   </style>
+  <script>
+    tailwind.config = {
+      darkMode: 'media',
+      theme: {
+        fontFamily: {
+          'sans': ['Embro', 'sans-serif'],
+          'serif': ['Embro', 'serif'],
+          'mono': ['monospace'],
+        },
+        extend: {
+          colors: {
+            pdx: {
+              gold: '#B38600',
+              green: '#005C45',
+              light: '#FFF8E1',
+              dark: '#221C00'
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body class="bg-white text-gray-900">
-  <nav class="bg-white shadow-sm">
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+  <nav class="bg-white dark:bg-gray-900 shadow-sm dark:shadow-none">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
-        <a href="/" class="text-xl font-bold text-pdx-dark">PDX Digital Corps</a>
+        <a href="/" class="text-xl font-bold text-pdx-dark dark:text-gray-100">PDX Digital Corps</a>
         <div class="hidden md:flex space-x-4">
-          <a href="/about.html" class="text-gray-700 hover:text-pdx-gold font-medium">About</a>
-          <a href="/orgs.html" class="text-gray-700 hover:text-pdx-gold font-medium">Get Help</a>
-          <a href="/volunteer.html" class="text-gray-700 hover:text-pdx-gold font-medium">Volunteer</a>
+          <a href="/about.html" class="text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">About</a>
+          <a href="/orgs.html" class="text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">Get Help</a>
+          <a href="/volunteer.html" class="text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">Volunteer</a>
         </div>
       </div>
     </div>
   </nav>
 
   <main class="py-16 px-4 max-w-4xl mx-auto">
-    <h1 class="text-4xl font-bold mb-6 text-pdx-dark">🌲 Portland Digital Corps Playbook</h1>
-    <p class="mb-6 text-lg text-gray-700">Welcome to the Portland Digital Corps Playbook — a practical guide for volunteers and collaborators joining this short-term civic tech experiment. This isn’t a startup, a nonprofit, or a long-term program. It’s a focused initiative meant to help real people do real work, right now.</p>
+    <h1 class="text-4xl font-bold mb-6 text-pdx-dark dark:text-gray-100">🌲 Portland Digital Corps Playbook</h1>
+    <p class="mb-6 text-lg text-gray-700 dark:text-gray-300">Welcome to the Portland Digital Corps Playbook — a practical guide for volunteers and collaborators joining this short-term civic tech experiment. This isn’t a startup, a nonprofit, or a long-term program. It’s a focused initiative meant to help real people do real work, right now.</p>
 
-    <p class="text-gray-700 mb-6 italic">This guide is a living document. Things may change. We’re sprinting in public.</p>
+    <p class="text-gray-700 dark:text-gray-300 mb-6 italic">This guide is a living document. Things may change. We’re sprinting in public.</p>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">What This <em>Is</em></h2>
-    <ul class="list-disc pl-6 text-gray-700 mb-6">
+    <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6">
       <li>A short-term, volunteer-powered civic tech effort</li>
       <li>Built to match skilled technologists with small orgs who need help</li>
       <li>Focused on impact, not polish — useful is the goal</li>
     </ul>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">What This <em>Isn’t</em></h2>
-    <ul class="list-disc pl-6 text-gray-700 mb-6">
+    <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6">
       <li>A permanent team or full-service agency</li>
       <li>A branding, marketing, or long-term maintenance firm</li>
       <li>A funnel for recruiting or startup ventures</li>
     </ul>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Values</h2>
-    <ul class="list-disc pl-6 text-gray-700 mb-6">
+    <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6">
       <li><strong>Respect the people</strong> — Assume good intent and give folks the benefit of the doubt.</li>
       <li><strong>Keep it real</strong> — Scope small. Be honest about what can be done.</li>
       <li><strong>Build trust</strong> — Follow through. Document well. Leave things better.</li>
@@ -69,14 +91,14 @@
     </ul>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Getting Started 🌲</h2>
-    <ol class="list-decimal pl-6 text-gray-700 mb-6">
+    <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300 mb-6">
       <li>Attend an Info Session (virtual or in-person)</li>
       <li>Fill out the Volunteer Form (or email us)</li>
       <li>We’ll be in touch about team formation</li>
     </ol>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Working Model (WIP)</h2>
-    <ul class="list-disc pl-6 text-gray-700 mb-6">
+    <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6">
       <li>Projects run in 4–8 week sprints</li>
       <li>Volunteers matched by skill, interest, and availability</li>
       <li>Each project has a point of contact or rotating lead</li>
@@ -85,47 +107,47 @@
     </ul>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Tools (Evaluating)</h2>
-    <p class="text-gray-700 mb-4">We’re not committing to a stack yet. Currently:</p>
-    <ul class="list-disc pl-6 text-gray-700 mb-6">
-      <li>Email: <a href="mailto:info@digitalcorpspdx.org" class="text-pdx-blue hover:text-pdx-dark">info@digitalcorpspdx.org</a></li>
+    <p class="text-gray-700 dark:text-gray-300 mb-4">We’re not committing to a stack yet. Currently:</p>
+    <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6">
+      <li>Email: <a href="mailto:info@digitalcorpspdx.org" class="text-pdx-blue hover:text-pdx-dark dark:text-gray-100">info@digitalcorpspdx.org</a></li>
       <li>Slack/Discord/Notion TBD</li>
     </ul>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Contribution Guidelines</h2>
-    <p class="text-gray-700 mb-4">We welcome people of all experience levels. Just bring:</p>
-    <ul class="list-disc pl-6 text-gray-700 mb-6">
+    <p class="text-gray-700 dark:text-gray-300 mb-4">We welcome people of all experience levels. Just bring:</p>
+    <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6">
       <li>Collaboration skills (listening, clarity, communication)</li>
       <li>A willingness to match effort with scope</li>
     </ul>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Leadership & Ops</h2>
-    <p class="text-gray-700 mb-6">This started with Ron — but it can’t run on one person alone. We’ll build light-touch roles around coordination, onboarding, and team support. Want to help? Raise your hand 🌲</p>
+    <p class="text-gray-700 dark:text-gray-300 mb-6">This started with Ron — but it can’t run on one person alone. We’ll build light-touch roles around coordination, onboarding, and team support. Want to help? Raise your hand 🌲</p>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Code of Conduct</h2>
     <h3 class="text-xl font-bold mt-6 mb-2">Be Respectful</h3>
-    <ul class="list-disc pl-6 text-gray-700 mb-4">
+    <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-4">
       <li>Respect boundaries and viewpoints</li>
       <li>Use welcoming and inclusive language</li>
     </ul>
     <h3 class="text-xl font-bold mt-6 mb-2">Be Inclusive</h3>
-    <ul class="list-disc pl-6 text-gray-700 mb-4">
+    <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-4">
       <li>Support diverse voices and backgrounds</li>
       <li>Include and uplift underrepresented people</li>
     </ul>
     <h3 class="text-xl font-bold mt-6 mb-2">Be Kind</h3>
-    <ul class="list-disc pl-6 text-gray-700 mb-6">
+    <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mb-6">
       <li>Constructive feedback only</li>
       <li>No harassment or belittling behavior</li>
     </ul>
-    <p class="text-sm text-gray-600 mb-10">Violations may result in removal from participation. We have zero tolerance for harassment or discrimination.</p>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-10">Violations may result in removal from participation. We have zero tolerance for harassment or discrimination.</p>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Questions?</h2>
-    <p class="text-gray-700 mb-6">Reach out anytime: <a href="mailto:info@digitalcorpspdx.org" class="text-pdx-blue hover:text-pdx-dark">info@digitalcorpspdx.org</a></p>
+    <p class="text-gray-700 dark:text-gray-300 mb-6">Reach out anytime: <a href="mailto:info@digitalcorpspdx.org" class="text-pdx-blue hover:text-pdx-dark dark:text-gray-100">info@digitalcorpspdx.org</a></p>
 
-    <p class="text-xl text-pdx-dark">🌲 Thanks for being part of this.</p>
+    <p class="text-xl text-pdx-dark dark:text-gray-100">🌲 Thanks for being part of this.</p>
   </main>
 
-  <footer class="py-8 text-center text-sm text-gray-500 bg-white border-t">
+  <footer class="py-8 text-center text-sm text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-900 border-t dark:border-gray-700">
     <p class="mb-1 font-serif text-base">Digital Corps of Portland</p>
     <p>PDX Digital Corps · 2025 · Volunteer-powered</p>
     <p class="mt-2">
