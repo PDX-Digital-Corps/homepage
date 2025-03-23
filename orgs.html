@@ -65,6 +65,7 @@
   </style>
   <script>
     tailwind.config = {
+      darkMode: 'media',
       theme: {
         fontFamily: {
           'sans': ['Embro', 'sans-serif'],
@@ -84,16 +85,16 @@
       }
     }
   </script>
-<body class="bg-white text-gray-900">
- <nav class="bg-white shadow-sm">
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+ <nav class="bg-white dark:bg-gray-900 shadow-sm dark:shadow-none">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <!-- Logo -->
-      <a href="/" class="text-xl font-bold text-pdx-dark">PDX Digital Corps</a>
+      <a href="/" class="text-xl font-bold text-pdx-dark dark:text-gray-100">PDX Digital Corps</a>
 
       <!-- Mobile menu toggle -->
       <div class="sm:hidden">
-        <button id="menu-toggle" class="text-pdx-dark focus:outline-none" aria-label="Toggle menu">
+        <button id="menu-toggle" class="text-pdx-dark dark:text-gray-100 focus:outline-none" aria-label="Toggle menu">
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M4 6h16M4 12h16M4 18h16" />
@@ -103,25 +104,25 @@
 
       <!-- Menu items (desktop) -->
       <div id="desktop-menu" class="hidden sm:flex space-x-4">
-        <a href="/about.html" class="text-gray-700 hover:text-pdx-gold font-medium">About</a>
-        <a href="/orgs.html" class="text-gray-700 hover:text-pdx-gold font-medium">Get Help</a>
-        <a href="/volunteer.html" class="text-gray-700 hover:text-pdx-gold font-medium">Volunteer</a>
+        <a href="/about.html" class="text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">About</a>
+        <a href="/orgs.html" class="text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">Get Help</a>
+        <a href="/volunteer.html" class="text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">Volunteer</a>
       </div>
     </div>
 
     <!-- Menu items (mobile) -->
     <div id="mobile-menu" class="sm:hidden hidden mt-2 space-y-2">
-      <a href="/about.html" class="block text-gray-700 hover:text-pdx-gold font-medium">About</a>
-      <a href="/orgs.html" class="block text-gray-700 hover:text-pdx-gold font-medium">Get Help</a>
-      <a href="/volunteer.html" class="block text-gray-700 hover:text-pdx-gold font-medium">Volunteer</a>
+      <a href="/about.html" class="block text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">About</a>
+      <a href="/orgs.html" class="block text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">Get Help</a>
+      <a href="/volunteer.html" class="block text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">Volunteer</a>
     </div>
   </div>
 </nav>
 
-  <header class="bg-pdx-light py-16">
+  <header class="bg-pdx-light dark:bg-gray-800 py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl font-bold mb-4 text-pdx-dark">For Portland Organizations</h1>
-      <p class="text-xl text-gray-700">
+      <h1 class="text-4xl font-bold mb-4 text-pdx-dark dark:text-gray-100">For Portland Organizations</h1>
+      <p class="text-xl text-gray-700 dark:text-gray-300">
         Get help with your digital challenges from skilled volunteers through focused, short-term projects.
       </p>
     </div>
@@ -130,10 +131,10 @@
   <main class="py-12">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
    <!-- Partnership Expectations Section -->
-<section class="mb-12 bg-white p-6 rounded-lg shadow-sm">
-  <h2 class="text-2xl font-semibold mb-6 text-pdx-dark">How We Work With Organizations</h2>
+<section class="mb-12 bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm dark:shadow-none">
+  <h2 class="text-2xl font-semibold mb-6 text-pdx-dark dark:text-gray-100">How We Work With Organizations</h2>
   
-  <div class="prose prose-lg max-w-none text-gray-700">
+  <div class="prose prose-lg max-w-none text-gray-700 dark:text-gray-300">
     <p>Portland Digital Corps exists to help public interest organizations get unstuck. We partner with nonprofits, local agencies, and community groups to scope and ship focused digital work—quickly, collaboratively, and without red tape.</p>
 
     <p>This isn’t consulting. It’s not grant-funded. It’s skilled technologists showing up to use their time and talents for the public good.</p>
@@ -152,11 +153,11 @@
       
       <!-- What We Can Help With Section -->
       <section class="mb-12">
-        <h2 class="text-2xl font-semibold mb-6 text-pdx-dark">How We Can Help</h2>
+        <h2 class="text-2xl font-semibold mb-6 text-pdx-dark dark:text-gray-100">How We Can Help</h2>
         
         <div class="grid md:grid-cols-2 gap-8">
           <div>
-            <h3 class="text-xl font-medium mb-3 text-pdx-dark">Types of Projects</h3>
+            <h3 class="text-xl font-medium mb-3 text-pdx-dark dark:text-gray-100">Types of Projects</h3>
             <ul class="space-y-3">
               <li class="flex items-start">
                 <svg class="h-5 w-5 text-pdx-blue mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -186,7 +187,7 @@
           </div>
           
           <div>
-            <h3 class="text-xl font-medium mb-3 text-pdx-dark">What Makes a Good Project</h3>
+            <h3 class="text-xl font-medium mb-3 text-pdx-dark dark:text-gray-100">What Makes a Good Project</h3>
             <ul class="space-y-3">
               <li class="flex items-start">
                 <svg class="h-5 w-5 text-pdx-blue mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -219,11 +220,11 @@
       
       <!-- Expectations Section -->
       <section class="mb-12">
-        <h2 class="text-2xl font-semibold mb-6 text-pdx-dark">What We Need From You</h2>
+        <h2 class="text-2xl font-semibold mb-6 text-pdx-dark dark:text-gray-100">What We Need From You</h2>
         
         <div class="grid md:grid-cols-2 gap-8">
           <div>
-            <h3 class="text-xl font-medium mb-3 text-pdx-dark">Your Commitments</h3>
+            <h3 class="text-xl font-medium mb-3 text-pdx-dark dark:text-gray-100">Your Commitments</h3>
             <ul class="space-y-3">
               <li class="flex items-start">
                 <svg class="h-5 w-5 text-pdx-blue mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -253,7 +254,7 @@
           </div>
           
           <div>
-            <h3 class="text-xl font-medium mb-3 text-pdx-dark">Our Limitations</h3>
+            <h3 class="text-xl font-medium mb-3 text-pdx-dark dark:text-gray-100">Our Limitations</h3>
             <ul class="space-y-3">
               <li class="flex items-start">
                 <svg class="h-5 w-5 text-red-500 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -285,10 +286,10 @@
       </section>
       
 <!-- Organization Contact Section -->
-<section class="mb-12 bg-white p-6 rounded-lg shadow-sm">
-  <h2 class="text-2xl font-semibold mb-6 text-pdx-dark">Interested in Working With Us?</h2>
+<section class="mb-12 bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm dark:shadow-none">
+  <h2 class="text-2xl font-semibold mb-6 text-pdx-dark dark:text-gray-100">Interested in Working With Us?</h2>
 
-  <div class="prose prose-lg max-w-none text-gray-700">
+  <div class="prose prose-lg max-w-none text-gray-700 dark:text-gray-300">
     <p>We’re always looking for mission-driven organizations who could use a hand. If your nonprofit, community org, or public interest team has a digital project & strategy engagement you’d like support with, please let us know.</p>
 
     <p>Just send us an email with a little bit about who you are and what you’re working on. We’ll follow up with some questions and see if it’s a good fit for one of our upcoming sprints.</p>
@@ -299,7 +300,7 @@
       </a>
     </p>
 
-    <p class="mt-4 text-sm text-gray-600">
+    <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
       We prioritize organizations in the Portland metro area but if you're in Oregon or SW Washington, please reach out and we'll try to help if it makes sense.
     </p>
   </div>
@@ -309,7 +310,7 @@
 </main>
   
 <!-- Footer -->
-<footer class="py-8 text-center text-sm text-gray-500 bg-white border-t">
+<footer class="py-8 text-center text-sm text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-900 border-t dark:border-gray-700">
   <p class="mb-1 font-serif text-base">Digital Design Corps of Portland</p>
   <p>PDX Digital Corps · 2025 · Volunteer-powered</p>
   <p class="mt-2">

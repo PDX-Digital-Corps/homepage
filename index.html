@@ -68,6 +68,7 @@
   </style>
   <script>
     tailwind.config = {
+      darkMode: 'media',
       theme: {
         fontFamily: {
           'sans': ['Embro', 'sans-serif'],
@@ -88,16 +89,16 @@
     }
   </script>
 </head>
-<body class="bg-white text-gray-900">
- <nav class="bg-white shadow-sm">
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+ <nav class="bg-white dark:bg-gray-900 shadow-sm dark:shadow-none">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <!-- Logo -->
-      <a href="/" class="text-xl font-bold text-pdx-dark">PDX Digital Corps</a>
+      <a href="/" class="text-xl font-bold text-pdx-dark dark:text-gray-100">PDX Digital Corps</a>
 
       <!-- Mobile menu toggle -->
       <div class="sm:hidden">
-        <button id="menu-toggle" class="text-pdx-dark focus:outline-none" aria-label="Toggle menu">
+        <button id="menu-toggle" class="text-pdx-dark dark:text-gray-100 focus:outline-none" aria-label="Toggle menu">
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M4 6h16M4 12h16M4 18h16" />
@@ -107,31 +108,31 @@
 
       <!-- Menu items (desktop) -->
       <div id="desktop-menu" class="hidden sm:flex space-x-4">
-        <a href="/about.html" class="text-gray-700 hover:text-pdx-gold font-medium">About</a>
-        <a href="/orgs.html" class="text-gray-700 hover:text-pdx-gold font-medium">Get Help</a>
-        <a href="/volunteer.html" class="text-gray-700 hover:text-pdx-gold font-medium">Volunteer</a>
+        <a href="/about.html" class="text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">About</a>
+        <a href="/orgs.html" class="text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">Get Help</a>
+        <a href="/volunteer.html" class="text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">Volunteer</a>
       </div>
     </div>
 
     <!-- Menu items (mobile) -->
     <div id="mobile-menu" class="sm:hidden hidden mt-2 space-y-2">
-      <a href="/about.html" class="block text-gray-700 hover:text-pdx-gold font-medium">About</a>
-      <a href="/orgs.html" class="block text-gray-700 hover:text-pdx-gold font-medium">Get Help</a>
-      <a href="/volunteer.html" class="block text-gray-700 hover:text-pdx-gold font-medium">Volunteer</a>
+      <a href="/about.html" class="block text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">About</a>
+      <a href="/orgs.html" class="block text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">Get Help</a>
+      <a href="/volunteer.html" class="block text-gray-700 dark:text-gray-300 hover:text-pdx-gold font-medium">Volunteer</a>
     </div>
   </div>
 </nav>
   
   <!-- Hero -->
-<header class="bg-pdx-light py-20">
+<header class="bg-pdx-light dark:bg-gray-800 py-20">
   <div class="max-w-4xl mx-auto text-center px-4">
-   <h1 class="text-5xl font-bold mb-4 text-pdx-dark">Real digital help from real technologists.</h1>
-<p class="text-xl text-gray-700 mb-6">
+   <h1 class="text-5xl font-bold mb-4 text-pdx-dark dark:text-gray-100">Real digital help from real technologists.</h1>
+<p class="text-xl text-gray-700 dark:text-gray-300 mb-6">
   Portland Digital Corps is a grassroots volunteer project connecting tech professionals with local nonprofits to fix what’s broken, build what’s missing, and ship what matters.
 </p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a href="/volunteer.html" class="px-6 py-3 bg-pdx-gold text-white font-medium rounded hover:bg-pdx-dark transition-colors">Join the Corps</a>
-      <a href="/orgs.html" class="px-6 py-3 bg-white text-pdx-dark border border-pdx-dark font-medium rounded hover:bg-gray-50 transition-colors">Submit a Project</a>
+      <a href="/orgs.html" class="px-6 py-3 bg-white dark:bg-gray-900 text-pdx-dark dark:text-gray-100 border border-pdx-dark dark:border-gray-600 font-medium rounded hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">Submit a Project</a>
     </div>
   </div>
 </header>
@@ -163,30 +164,30 @@
 
   
   <!-- How it Works -->
-  <section class="py-16 bg-white" id="how">
+  <section class="py-16 bg-white dark:bg-gray-900" id="how">
     <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-3xl font-semibold mb-8 text-center text-pdx-dark">How It Works</h2>
+      <h2 class="text-3xl font-semibold mb-8 text-center text-pdx-dark dark:text-gray-100">How It Works</h2>
       <div class="grid md:grid-cols-3 gap-8">
         <div>
-          <h3 class="text-xl font-bold text-pdx-dark">1. Identify the need</h3>
-          <p class="text-gray-700">We scope bite-sized projects with clear deliverables that can ship in weeks, not months.</p>
+          <h3 class="text-xl font-bold text-pdx-dark dark:text-gray-100">1. Identify the need</h3>
+          <p class="text-gray-700 dark:text-gray-300">We scope bite-sized projects with clear deliverables that can ship in weeks, not months.</p>
         </div>
         <div>
-          <h3 class="text-xl font-bold text-pdx-dark">2. Build expert teams</h3>
-          <p class="text-gray-700">Designers, developers, and PMs form cross-functional teams matched to project needs.</p>
+          <h3 class="text-xl font-bold text-pdx-dark dark:text-gray-100">2. Build expert teams</h3>
+          <p class="text-gray-700 dark:text-gray-300">Designers, developers, and PMs form cross-functional teams matched to project needs.</p>
         </div>
         <div>
-          <h3 class="text-xl font-bold text-pdx-dark">3. Ship real solutions</h3>
-          <p class="text-gray-700">No endless meetings. No vague promises. Just focused work that delivers results.</p>
+          <h3 class="text-xl font-bold text-pdx-dark dark:text-gray-100">3. Ship real solutions</h3>
+          <p class="text-gray-700 dark:text-gray-300">No endless meetings. No vague promises. Just focused work that delivers results.</p>
         </div>
       </div>
     </div>
   </section>
 
  <!-- Our Process -->
-  <section class="py-16 bg-pdx-light" id="process">
+  <section class="py-16 bg-pdx-light dark:bg-gray-800" id="process">
     <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-3xl font-semibold mb-8 text-center text-pdx-dark">Our Process</h2>
+      <h2 class="text-3xl font-semibold mb-8 text-center text-pdx-dark dark:text-gray-100">Our Process</h2>
       
       <div class="relative">
         <!-- Vertical timeline line -->
@@ -197,72 +198,72 @@
           <!-- Step 1 -->
           <div class="relative flex flex-col md:flex-row items-center">
             <div class="flex-1 md:text-right md:pr-8 mb-4 md:mb-0">
-              <h3 class="text-xl font-bold text-pdx-dark">1. Submit Interest</h3>
-              <p class="text-gray-700">Organizations submit projects. Volunteers apply to join the corps.</p>
+              <h3 class="text-xl font-bold text-pdx-dark dark:text-gray-100">1. Submit Interest</h3>
+              <p class="text-gray-700 dark:text-gray-300">Organizations submit projects. Volunteers apply to join the corps.</p>
             </div>
             <div class="w-10 h-10 rounded-full bg-pdx-gold text-white flex items-center justify-center font-bold z-10">1</div>
             <div class="flex-1 md:pl-8">
-              <p class="text-gray-700">We review submissions to find projects that align with our volunteer skills and timeline.</p>
+              <p class="text-gray-700 dark:text-gray-300">We review submissions to find projects that align with our volunteer skills and timeline.</p>
             </div>
           </div>
           
           <!-- Step 2 -->
           <div class="relative flex flex-col md:flex-row items-center">
             <div class="flex-1 md:text-right md:pr-8 mb-4 md:mb-0">
-              <p class="text-gray-700">For promising matches, we'll reach out to schedule an initial call to learn more about your needs.</p>
+              <p class="text-gray-700 dark:text-gray-300">For promising matches, we'll reach out to schedule an initial call to learn more about your needs.</p>
             </div>
             <div class="w-10 h-10 rounded-full bg-pdx-gold text-white flex items-center justify-center font-bold z-10">2</div>
             <div class="flex-1 md:pl-8">
-              <h3 class="text-xl font-bold text-pdx-dark">2. Initial Conversation</h3>
-              <p class="text-gray-700">We discuss your project, timeline, and expectations.</p>
+              <h3 class="text-xl font-bold text-pdx-dark dark:text-gray-100">2. Initial Conversation</h3>
+              <p class="text-gray-700 dark:text-gray-300">We discuss your project, timeline, and expectations.</p>
             </div>
           </div>
           
           <!-- Step 3 -->
           <div class="relative flex flex-col md:flex-row items-center">
             <div class="flex-1 md:text-right md:pr-8 mb-4 md:mb-0">
-              <h3 class="text-xl font-bold text-pdx-dark">3. Project Scoping</h3>
-              <p class="text-gray-700">Our team evaluates what's achievable in 4-8 weeks and develops a recommendation.</p>
+              <h3 class="text-xl font-bold text-pdx-dark dark:text-gray-100">3. Project Scoping</h3>
+              <p class="text-gray-700 dark:text-gray-300">Our team evaluates what's achievable in 4-8 weeks and develops a recommendation.</p>
             </div>
            <div class="w-10 h-10 rounded-full bg-pdx-gold text-white flex items-center justify-center font-bold z-10">3</div>
             <div class="flex-1 md:pl-8">
-              <p class="text-gray-700">Once we understand the challenge, we'll map out what we can realistically accomplish.</p>
+              <p class="text-gray-700 dark:text-gray-300">Once we understand the challenge, we'll map out what we can realistically accomplish.</p>
             </div>
           </div>
           
           <!-- Step 4 -->
           <div class="relative flex flex-col md:flex-row items-center">
             <div class="flex-1 md:text-right md:pr-8 mb-4 md:mb-0">
-              <p class="text-gray-700">If you accept our recommendation, we'll formalize with a simple agreement outlining deliverables and timeline.</p>
+              <p class="text-gray-700 dark:text-gray-300">If you accept our recommendation, we'll formalize with a simple agreement outlining deliverables and timeline.</p>
             </div>
             <div class="w-10 h-10 rounded-full bg-pdx-gold text-white flex items-center justify-center font-bold z-10">4</div>
             <div class="flex-1 md:pl-8">
-              <h3 class="text-xl font-bold text-pdx-dark">4. Project Plan</h3>
-              <p class="text-gray-700">We'll create a clear roadmap with milestones and responsibilities.</p>
+              <h3 class="text-xl font-bold text-pdx-dark dark:text-gray-100">4. Project Plan</h3>
+              <p class="text-gray-700 dark:text-gray-300">We'll create a clear roadmap with milestones and responsibilities.</p>
             </div>
           </div>
           
           <!-- Step 5 -->
           <div class="relative flex flex-col md:flex-row items-center">
             <div class="flex-1 md:text-right md:pr-8 mb-4 md:mb-0">
-              <h3 class="text-xl font-bold text-pdx-dark">5. Collaborative Work</h3>
-              <p class="text-gray-700">We meet 1-2 times weekly to review progress and gather feedback.</p>
+              <h3 class="text-xl font-bold text-pdx-dark dark:text-gray-100">5. Collaborative Work</h3>
+              <p class="text-gray-700 dark:text-gray-300">We meet 1-2 times weekly to review progress and gather feedback.</p>
             </div>
             <div class="w-10 h-10 rounded-full bg-pdx-gold text-white flex items-center justify-center font-bold z-10">5</div>
             <div class="flex-1 md:pl-8">
-              <p class="text-gray-700">This is a partnership — we'll need your active participation throughout the process.</p>
+              <p class="text-gray-700 dark:text-gray-300">This is a partnership — we'll need your active participation throughout the process.</p>
             </div>
           </div>
           
           <!-- Step 6 -->
           <div class="relative flex flex-col md:flex-row items-center">
             <div class="flex-1 md:text-right md:pr-8 mb-4 md:mb-0">
-              <p class="text-gray-700">We deliver the completed project, provide documentation, and ensure you know how to maintain it.</p>
+              <p class="text-gray-700 dark:text-gray-300">We deliver the completed project, provide documentation, and ensure you know how to maintain it.</p>
             </div>
             <div class="w-10 h-10 rounded-full bg-pdx-gold text-white flex items-center justify-center font-bold z-10">6</div>
             <div class="flex-1 md:pl-8">
-              <h3 class="text-xl font-bold text-pdx-dark">6. Project Delivery</h3>
-              <p class="text-gray-700">You receive the completed solution, documentation, and any training needed.</p>
+              <h3 class="text-xl font-bold text-pdx-dark dark:text-gray-100">6. Project Delivery</h3>
+              <p class="text-gray-700 dark:text-gray-300">You receive the completed solution, documentation, and any training needed.</p>
             </div>
           </div>
         </div>
@@ -271,16 +272,16 @@
   </section>
   
   <!-- For Organizations -->
-  <section class="py-16 bg-gray-50" id="orgs">
+  <section class="py-16 bg-gray-50 dark:bg-gray-800" id="orgs">
     <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-3xl font-semibold mb-4 text-center text-pdx-dark">For Organizations</h2>
-      <p class="text-center text-gray-700 mb-8 max-w-3xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-4 text-center text-pdx-dark dark:text-gray-100">For Organizations</h2>
+      <p class="text-center text-gray-700 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
         We help nonprofits, government entities, and community groups with digital projects that have been stuck on the back burner.
       </p>
       <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-3 text-pdx-dark">What we can help with:</h3>
-          <ul class="text-gray-700 space-y-2">
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm dark:shadow-none">
+          <h3 class="text-xl font-bold mb-3 text-pdx-dark dark:text-gray-100">What we can help with:</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2">
             <li class="flex items-start">
               <svg class="h-5 w-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -308,9 +309,9 @@
           </ul>
           <a href="/orgs.html" class="mt-6 inline-block px-6 py-3 bg-pdx-blue text-white rounded hover:bg-pdx-dark transition-colors">Submit Your Project</a>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-3 text-pdx-dark">What we don't do:</h3>
-          <ul class="text-gray-700 space-y-2">
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm dark:shadow-none">
+          <h3 class="text-xl font-bold mb-3 text-pdx-dark dark:text-gray-100">What we don't do:</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2">
             <li class="flex items-start">
               <svg class="h-5 w-5 text-red-500 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -336,7 +337,7 @@
               Enterprise-scale software development
             </li>
           </ul>
-          <p class="mt-6 text-sm text-gray-600">Not sure if your project is a good fit? Come to our info session or submit your idea anyway – we're happy to help you figure it out.</p>
+          <p class="mt-6 text-sm text-gray-600 dark:text-gray-400">Not sure if your project is a good fit? Come to our info session or submit your idea anyway – we're happy to help you figure it out.</p>
         </div>
       </div>
     </div>
@@ -348,21 +349,21 @@
   <p class="text-lg mb-6 max-w-2xl mx-auto">
     This isn't just volunteering—it's a chance to build your portfolio, connect with others, and create real value for Portland organizations.
   </p>
-  <a href="/volunteer.html" class="px-6 py-3 bg-white text-pdx-gold font-medium rounded hover:bg-gray-100 transition-colors">Apply to Volunteer</a>
+  <a href="/volunteer.html" class="px-6 py-3 bg-white dark:bg-gray-900 text-pdx-gold font-medium rounded hover:bg-gray-100 transition-colors">Apply to Volunteer</a>
   <p class="mt-4 text-sm max-w-xl mx-auto">
     Projects run in short sprints. You'll work on real problems, build your portfolio, and connect with other civic-minded professionals.
   </p>
 </section>
   
   <!-- Why This Matters -->
-  <section class="py-16 bg-white">
+  <section class="py-16 bg-white dark:bg-gray-900">
     <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-semibold mb-6 text-center text-pdx-dark">Why This Matters</h2>
+      <h2 class="text-3xl font-semibold mb-6 text-center text-pdx-dark dark:text-gray-100">Why This Matters</h2>
       <div class="grid md:grid-cols-2 gap-8">
         <div>
-          <h3 class="text-xl font-bold mb-3 text-pdx-dark">For Tech Professionals</h3>
-          <p class="text-gray-700 mb-4">Job searching is broken. Endlessly revising portfolios and chasing interviews is exhausting. This is a chance to:</p>
-          <ul class="text-gray-700 space-y-2">
+          <h3 class="text-xl font-bold mb-3 text-pdx-dark dark:text-gray-100">For Tech Professionals</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-4">Job searching is broken. Endlessly revising portfolios and chasing interviews is exhausting. This is a chance to:</p>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2">
             <li class="flex items-start">
               <svg class="h-5 w-5 text-pdx-blue mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -384,9 +385,9 @@
           </ul>
         </div>
         <div>
-          <h3 class="text-xl font-bold mb-3 text-pdx-dark">For Organizations</h3>
-          <p class="text-gray-700 mb-4">Digital infrastructure is increasingly critical, but many orgs lack the resources to address it. This is a chance to:</p>
-          <ul class="text-gray-700 space-y-2">
+          <h3 class="text-xl font-bold mb-3 text-pdx-dark dark:text-gray-100">For Organizations</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-4">Digital infrastructure is increasingly critical, but many orgs lack the resources to address it. This is a chance to:</p>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2">
             <li class="flex items-start">
               <svg class="h-5 w-5 text-pdx-blue mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -412,10 +413,10 @@
   </section>
 
 <!-- Email Signup in Footer -->
-<section class="bg-white border-t py-8 text-center">
+<section class="bg-white dark:bg-gray-900 border-t dark:border-gray-700 py-8 text-center">
   <div class="max-w-4xl mx-auto px-4">
-    <h2 class="text-xl font-semibold text-pdx-dark mb-2">Stay in the loop</h2>
-    <p class="text-gray-700 text-sm mb-4">
+    <h2 class="text-xl font-semibold text-pdx-dark dark:text-gray-100 mb-2">Stay in the loop</h2>
+    <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">
       Want updates about upcoming sessions and ways to get involved? Subscribe to our email list.
     </p>
     <form
@@ -431,7 +432,7 @@
         id="bd-email"
         placeholder="you@email.com"
         required
-        class="px-4 py-2 rounded text-pdx-dark placeholder-gray-500 border border-pdx-dark focus:outline-none focus:ring-2 focus:ring-pdx-gold w-full sm:w-64"
+        class="px-4 py-2 rounded text-pdx-dark dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 border border-pdx-dark dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-pdx-gold w-full sm:w-64"
       />
       <input
         type="submit"
@@ -445,7 +446,7 @@
 
   
  <!-- Footer -->
-  <footer class="py-8 text-center text-sm text-gray-500 bg-white border-t">
+  <footer class="py-8 text-center text-sm text-gray-500 bg-white dark:bg-gray-900 border-t dark:border-gray-700">
     <div class="mt-4 flex justify-center">
   <img src="/fonts/pdxdc.svg" alt="PDX Digital Corps Logo" class="h-10 opacity-60" />
 </div>
