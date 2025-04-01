@@ -136,28 +136,36 @@
   </div>
 </header>
   
-<!-- Info Session -->
-<section class="py-6 bg-pdx-green text-white">
-  <div class="max-w-4xl mx-auto text-center px-4">
-    <div class="flex items-center justify-center gap-2 mb-2">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-      </svg>
-      <span class="font-semibold">Upcoming Info Session</span>
-    </div>
-    <p class="mb-3">
-      Join us on <strong>March 31st at 6pm PDT</strong> for a virtual info session to learn more about how to get involved, the kinds of projects we’re planning, and what to expect.  
-      We’ll walk through the program, answer your questions, and share what’s coming next.
+<!-- Email List Signup -->
+<section class="py-10 bg-pdx-green text-white text-center">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4">Want updates from the Corps?</h2>
+    <p class="text-lg mb-6 max-w-2xl mx-auto">
+      Get early access to project calls, volunteer roles, events, and behind-the-scenes updates.
+      Sign up for our email newsletter — it’s low traffic and high value.
     </p>
-    <p class="mb-3">
-      Can’t make it? No worries — we’ll also host an in-person session in early April. Attendance is helpful, but not required to participate.
-    </p>
-    <a href="https://www.eventbrite.com/e/1295425074269" target="_blank" class="inline-flex items-center font-medium text-white underline hover:text-gray-100">
-      RSVP for the Virtual Info Session
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-      </svg>
-    </a>
+    <form
+      action="https://buttondown.email/api/emails/embed-subscribe/pdxdigitalcorps"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://buttondown.email/pdxdigitalcorps', 'popupwindow')"
+      class="flex flex-col sm:flex-row items-center justify-center gap-3"
+    >
+      <input
+        type="email"
+        name="email"
+        id="bd-email"
+        placeholder="you@email.com"
+        required
+        class="px-4 py-2 rounded text-pdx-dark placeholder-gray-500 border border-white focus:outline-none focus:ring-2 focus:ring-pdx-gold w-full sm:w-64"
+      />
+      <input
+        type="submit"
+        value="Subscribe"
+        class="bg-white text-pdx-green font-semibold px-4 py-2 rounded hover:bg-pdx-gold hover:text-white transition-colors cursor-pointer"
+      />
+    </form>
+    <p class="text-xs text-gray-200 mt-2">We only send updates when we’ve got something real to share. No spam.</p>
   </div>
 </section>
 
